@@ -1,0 +1,1123 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Your TopUp Center | FF Diamond Store BD </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="আপনার বিশ্বস্ত অনলাইন ডিজিটাল গেম স্টোর Your TopUp Center  - এ আপনার প্রিয় গেম ক্রেডিট টপ-আপ করুন । ">
+    <meta name="keywords" content="Your TopUp Center, #ytc24, topup, free fire, gaming,  seller">
+    <meta name="author" content="Ali Hosen">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Your TopUp Center">
+    <meta property="og:title" content="Your TopUp Center | TopUp Your Favourite Game Credit">
+    <meta property="og:image" content="https://i.postimg.cc/Qx3wdSvM/Adobe-Express-20231213-2151070-1.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://i.postimg.cc/mD3qYHH4/Picsart-24-01-20-22-35-57-863.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Cabin:ital,wght@0,400..700;1,400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin", sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    background: #dcdcdc;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://i.postimg.cc/DzCCpHs0/1723900816100.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 20px 6%;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute; /* 'fixed' থেকে 'absolute' এ পরিবর্তন করা হলো */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: transparent; 
+  transition: top 0.3s; /* স্ক্রল করার সময় ন্যাভ বার হাইড করতে এই ট্রানজিশন ব্যবহার হবে */
+}
+
+
+nav img {
+  width: 150px;
+  height: auto;
+ 
+  filter: drop-shadow(0 0 10px #00ff03);
+
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-links ul li a:hover {
+  background: #00ff03;
+  color: #000;
+}
+
+.text-box {
+  text-align: center;
+  color: #fff;
+}
+
+.text-box h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+  
+    text-transform: uppercase;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.text-box h1:hover{
+    text-shadow: 0 0 30px #00ff03;
+    transition: 1.5s;
+   
+}
+
+.text-box p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 14px;
+  background: transparent;
+  border-radius: 30px;
+  transition: background 0.5s, color 0.5s;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.hero-btn:hover {
+  background: #00ff03;
+  color: #000;
+  border: none;
+  box-shadow: 0 0 30px #00ff03, 0 0 30px #00ff03;
+  transition: 1.5s;
+}
+
+.fa-bars, .fa-times {
+  display: none;
+}
+
+/* Responsive Styles */
+@media(max-width: 768px){
+  nav {
+    background: transparent; /* Initially transparent for mobile mode */
+  }
+  
+  .nav-links ul {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    display: none;
+    transition: 0.5s ease;
+  }
+
+  .nav-links ul.show {
+    display: flex;
+  }
+
+  .nav-links ul li a {
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+   
+  }
+  
+ .nav-links ul li a:hover{
+     background: #00ff03:
+     transition: 1.5s;
+     color: black;
+     box-shadow: 0 0 5px #00ff03;
+ }
+
+  .fa-bars, .fa-times {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+    nav img{
+        width: 100px;
+    }
+    .text-box h1{
+        font-size: 40px;
+    }
+    
+    .text-box p{
+        font-size: 17;
+    }
+    .hero-btn{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+    
+    /* Footer */
+
+
+       .mfooter {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            background-color: #f4f4f4;
+        }
+
+        footer {
+        background: radial-gradient(circle, #000000, #0f0f1f);
+            color: white;
+            position: relative;
+            padding: 50px 0;
+            overflow: hidden;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .footer-section {
+            width: 100%;
+            max-width: 25%;
+            padding: 20px;
+        }
+
+        
+        .company-info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .company-info img {
+            max-width: 150px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 0 0 30px #26ff00;
+            border: 2px solid #26ff00;
+        }
+
+        .company-info h1 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: "Merriweather Sans", sans-serif;
+        }
+
+        .footer-section h2 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+            position: relative;
+            animation: floatIn 1.2s ease-in-out;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            font-size: 14px;
+            line-height: 1.6;
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #00f0ff;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons li {
+            list-style: none;
+        }
+
+        .social-icons li a {
+            color: white;
+            font-size: 22px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons li a:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            background: #1B2735;
+            animation: fadeInUp 2s ease-in-out;
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+        }
+
+        
+        @media screen and (max-width: 768px) {
+            .footer-section {
+                max-width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .footer-section {
+                max-width: 100%;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes floatIn {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        
+        @keyframes colorShift {
+            0% {
+                color: #fff;
+            }
+            50% {
+                color: #26ff00;
+                text-shadow: 0 0 30px #26ff00;
+            }
+            100% {
+                color: #fff;
+            }
+        }
+
+        .footer-section h2 {
+            animation: floatIn 1.2s ease-in-out, colorShift 3s infinite alternate;
+        }
+
+        .social-icons li a {
+            animation: colorShift 2s infinite alternate;
+        }
+
+
+
+#fro{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+#fr{
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Sub Head */
+
+        
+.slider-container {
+            position: relative;
+            max-width: 90%;
+            height: 400px; /* Adjusted height for better visibility */
+            overflow: hidden;
+            margin: 0 auto;
+            border-radius: 30px;
+            background-color: #000; /* Optional: Adds background color to hide overflow issues */
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures images cover the slide area */
+        }
+
+        .dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            background-color: #3bff00;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.5s ease;
+        }
+
+        .active {
+            background-color: #555;
+        }       
+
+        /* Notice Board CSS */
+        .notice-board {
+            position: relative;
+            max-width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0px 4px 10px black;
+            animation: fadeIn 1s ease;
+            padding: 20px;
+            border-bottom: 10px solid #50ff00;
+        }
+
+        .notice {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3bff00;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            
+        }
+
+        .notice-text {
+            color: black;
+            font-size: 16px;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: black;
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+            
+            transition: background-color 0.3s ease;
+        }
+
+        .close-btn:hover {
+            background-color: darkred;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .slider-container {
+                height: 300px;
+            }
+
+            .dots {
+                gap: 5px;
+            }
+
+            .notice-text {
+                font-size: 14px;
+            }
+
+            .notice-board {
+                padding: 10px;
+            }
+        }
+        
+       .blank{
+           height: 3vh;
+           width: 100%;
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Products */
+
+
+
+.products{
+    margin 0 auto;
+    background: #000;
+}
+
+
+
+   
+
+
+
+       .allp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh;
+            margin: 0;
+            background: #dcdcdc;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px;
+            
+        }
+
+        .card {
+            width: 250px;
+            height: 350px;
+            perspective: 1000px;
+            transition: transform 0.5s ease;
+            position: relative;
+            border-radius: 20px;
+            background-color: #141414;
+            box-shadow: 0 0 15px #40cbff;
+            overflow: hidden;
+            border: 3px solid #000;
+            opacity: 0; /* Initially hidden */
+            animation: fade-in 1s ease forwards; /* Fade-in effect */
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(1000px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card:hover {
+            transform: rotateY(15deg) rotateX(10deg);
+            border-color: #26ff00;
+            box-shadow: 0 0 30px black;
+            transition: 1.5s;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            transform-style: preserve-3d;
+            transition: transform 0.5s ease;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            transform: translateZ(50px);
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #26ff00;
+            text-shadow: 0 0 10px #26ff00;
+            transform: translateZ(30px);
+            padding: 10px;
+            animation: glow-title 3s infinite alternate;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #ccc;
+            padding: 10px;
+            text-align: center;
+            transform: translateZ(20px);
+        }
+
+        .card-btn {
+            padding: 10px 20px;
+            border: 2px solid #26ff00;
+            border-radius: 5px;
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(38, 255, 0, 0.3);
+            transition: 0.4s ease;
+        }
+
+        .card-btn:hover:before {
+            left: 100%;
+        }
+
+        .card-btn:hover {
+            background-color: #26ff00;
+            color: #000;
+            box-shadow: 0 0 20px #26ff00;
+            
+        }
+
+        @keyframes glow-title {
+            from {
+                text-shadow: 0 0 10px #26ff00, 0 0 20px #26ff00;
+            }
+            to {
+                text-shadow: 0 0 20px #26ff00, 0 0 30px #26ff00;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+
+        /* Button glowing animation */
+        @keyframes glow-button {
+            0% {
+                box-shadow: 0 0 5px #26ff00;
+            }
+            50% {
+                box-shadow: 0 0 15px #26ff00;
+            }
+            100% {
+                box-shadow: 0 0 5px #26ff00;
+            }
+        }
+
+        .card-btn {
+            animation: glow-button 2s infinite;
+        }
+       .card a{
+            text-decoration: none;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
+</style>
+</head>
+
+<body>
+    
+    <!-- Header -->
+<section class="header">
+    <nav id="navbar">
+        <a href="https://yourtopupcenter.github.io/home">
+            <img src="https://i.postimg.cc/Pxjg6DpL/Picsart-24-01-20-22-35-57-863.png">
+        </a>
+        <div class="nav-links">
+            <i class="fa fa-bars" id="menu-icon" onclick="toggleMenu()"></i>
+            <ul id="navMenu">
+                <li><a href="https://yourtopupcenter.github.io/home">HOME</a></li>
+                <li><a href="https://yourtopupcenter.github.io/Products">PRODUCTS</a></li>
+                <li><a href="https://yourtopupcenter.github.io/Offers">OFFER</a></li>
+                <li><a href="https://yourtopupcenter.github.io/Blogs">BLOGS</a></li>
+                <li><a href="https://yourtopupcenter.github.io/About">ABOUT</a></li>
+                <li><a href="https://yourtopupcenter.github.io/ContactUs">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="text-box">
+        <h1>Your TopUp Center</h1>
+        <p>Your Best Game Partner<br>Trusted, Low Price, Secure, Instant Delivery</p>
+        <a href="https://yourtopupcenter.github.io/Products" class="hero-btn">See Our Products</a>
+    </div>
+</section>
+
+
+<!-- End Of Header -->
+
+
+<!-- Sub Header -->
+
+
+<section class="sh">
+    <!-- Slider Section -->
+    <div class="blank"></div>
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="c.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="https://i.postimg.cc/jdgwK492/Picsart-24-08-19-18-53-19-736.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="https://i.postimg.cc/TY8Pq2Sd/19526173-copy-580x260.jpg" alt="Slide 3">
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <!-- Notice Board Section -->
+    <div class="notice-board">
+        <div class="notice" id="notice1">
+            <span class="notice-text">New Update: Check out our latest offers!</span>
+            <button class="close-btn" onclick="closeNotice('notice1')">&times;</button>
+        </div>
+        <div class="notice" id="notice2">
+            <span class="notice-text">Important: Our privacy policy has changed.</span>
+            <button class="close-btn" onclick="closeNotice('notice2')">&times;</button>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- Products -->
+
+<section class="products">
+
+<div class="phead">
+    
+</div>
+<div class="allp">
+
+<div class="cards-container">
+    <div class="card" ><a href="#">
+        <div class="card-inner">
+            <div class="card-img" style="background-image: url('https://i.postimg.cc/fb472MdZ/Picsart-24-03-14-16-04-26-528.png');"></div>
+            <div class="card-title">Garena Free Fire BD</div>
+            <div class="card-description">Instant Diamonds for Enhanced Gameplay</div>
+            <button class="card-btn">Buy Now</button>
+        </div></a>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-img" style="background-image: url('https://via.placeholder.com/250x180.png?text=Product+2');"></div>
+            <div class="card-title">Product 2</div>
+            <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <button class="card-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-img" style="background-image: url('https://via.placeholder.com/250x180.png?text=Product+3');"></div>
+            <div class="card-title">Product 3</div>
+            <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <button class="card-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-img" style="background-image: url('https://via.placeholder.com/250x180.png?text=Product+4');"></div>
+            <div class="card-title">Product 4</div>
+            <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <button class="card-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-img" style="background-image: url('a.jpg');"></div>
+            <div class="card-title">Product 5</div>
+            <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <button class="card-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-img" style="background-image: url('https://via.placeholder.com/250x180.png?text=Product+6');"></div>
+            <div class="card-title">Product 6</div>
+            <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <button class="card-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-img" style="background-image: url('https://via.placeholder.com/250x180.png?text=Product+7');"></div>
+            <div class="card-title">Product 7</div>
+            <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <button class="card-btn">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+
+
+
+</section>
+
+<!-- End Of Products -->
+
+
+
+
+
+<!-- Footer -->
+    
+    
+    
+<section class="mfooter">
+    
+    <footer class="footer">
+        <div class="company-info">
+            <img src="https://i.postimg.cc/xCB0dHGy/b295bb43-9ccd-47e2-aebd-900434a0a0fb.jpg" alt="Your TopUp Center">
+            <h1>Your TopUp Center</h1>
+        </div>
+        <div class="footer-container">
+            <div class="footer-section about-us">
+                <h2>About Us</h2>
+                <p id="fro">Top-up your favorite game credits at " Your TopUp Center " , your trusted online digital game store. You get your game credits fast in just 5 - 10 minutes. You can order by following just a few steps. Buy safely online with Nagad, bKash, Rocket. Our " Your TopUp Center " platform is a safe and reliable platform.</p>
+            </div>
+            <div class="footer-section contact-info">
+                <h2>Contact Information</h2>
+                <p>Email : <a href="mailto:ffdiamondstorebd@gmail.com" style="text-decoration: none; color: #fff;">ffdiamondstorebd@gmail.com</a></p>
+                <p>Phone : <a href="tel:+880 1781-146747" style="text-decoration: none; color: #fff;">+880 17811-46747</a></p>
+                <p>Address : <a href="https://maps.app.goo.gl/DQpiKEpmaRjnwb9U7" style="text-decoration: none; color: #fff;">Tarakandi, Sribordi, Sherpur, Mymensingh, Bangladesh</a></p>
+                <p>Support : <a href="https://t.me/YTC24_bot" style="text-decoration: none; color: #fff;">Telegram &nbsp <i class="fas fa-external-link-alt"></i></a></p>
+            </div>
+            <div class="footer-section important-links">
+                <h2>Important Links</h2>
+                <ul>
+                    <li><a href="https://yourtopupcenter.github.io/" id="fr">Home</a></li>
+                    <li><a href="https://yourtopupcenter.github.io/Products" id="fr">Products</a></li>
+                    <li><a href="https://yourtopupcenter.github.io/Offers" id="fr">Offer</a></li>
+                    <li><a href="https://yourtopupcenter.github.io/reseller" id="fr">Reseller Platform</a></li>
+                    
+                    <li><a href="https://yourtopupcenter.github.io/About" id="fr">About</a></li>
+                    <li><a href="https://yourtopupcenter.github.io/ContactUs" id="fr">Contact Us</a></li>
+                    <li><a href="https://yourtopupcenter.github.io/terms" id="fr">Terms and Conditions</a></li>
+                    <li><a href="https://yourtopupcenter.github.io/privacy" id="fr">Privacy Policies</a></li>
+                    <li><a href="https://yourtopupcenter.github.io/Dashboard" id="fr">Menu</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <h2>Social Media</h2>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/yourtopupcenterofficial" ><i class="fab fa-facebook"></i></a></li>   
+                    <li><a href="https://wa.me/message/O5T2K7VX66VUP1"><i class="fab fa-whatsapp"></i></a></li>             
+                    <li><a href="https://www.instagram.com/yourtopupcenterofficial"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/yourtopupcenter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/@techwithahofficial"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://t.me/yourtopupcenterofficial"><i class="fab fa-telegram"></i></a></li>
+                    <li><a href="https://www.tiktok.com/yourtopupcenter"><i class="fab fa-tiktok"></i></a></li>
+                    
+                    <li><a href="https://yourtopupcenter.github.io/redirect/facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://yourtopupcenter.github.io/redirect/whatsappgroup"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://yourtopupcenter.github.io/redirect/telegram"><i class="fab fa-telegram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p id="fro">&copy; 2022 - 2024 Your TopUp Center | All Rights Reserved | V 5 | Devloper : <a href="https://alihosenofficial.github.io" style="color: #fff;">Ali Hosen</a></p>
+        </div>
+    </footer>
+</section>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("navMenu");
+    var menuIcon = document.getElementById("menu-icon");
+    var navbar = document.getElementById("navbar");
+
+    menu.classList.toggle("show");
+    
+    if(menuIcon.classList.contains("fa-bars")) {
+        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.add("fa-times");
+        navbar.style.background = "rgba(0, 0, 0, 0.8)"; // Background appears when toggled
+    } else {
+        menuIcon.classList.remove("fa-times");
+        menuIcon.classList.add("fa-bars");
+        navbar.style.background = "transparent"; // Background becomes transparent again
+    }
+}
+
+
+
+
+let lastScrollTop = 0;
+window.addEventListener("scroll", function () {
+    var navbar = document.getElementById("navbar");
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (currentScroll > lastScrollTop) {
+        // নিচের দিকে স্ক্রল করলে navbar হাইড হবে
+        navbar.style.top = "-80px"; 
+    } else {
+        // উপরের দিকে স্ক্রল করলে navbar শো হবে
+        navbar.style.top = "0"; 
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+});
+
+
+
+
+
+// Add 3D floating effect to footer items
+        const footerSections = document.querySelectorAll('.footer-section h2');
+
+        footerSections.forEach(section => {
+            section.addEventListener('mouseover', () => {
+                section.style.transform = 'rotateX(15deg) rotateY(15deg)';
+            });
+
+            section.addEventListener('mouseout', () => {
+                section.style.transform = 'rotateX(0) rotateY(0)';
+            });
+        });
+        
+        
+        
+        
+        const slides = document.querySelector('.slides');
+        const dots = document.querySelectorAll('.dot');
+        let currentIndex = 0;
+        const totalSlides = dots.length;
+
+        let startX = 0;
+        let isDragging = false;
+
+        function updateDots(index) {
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+        }
+
+        function showNextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            updateDots(currentIndex);
+        }
+
+        function showPreviousSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            updateDots(currentIndex);
+        }
+
+        setInterval(showNextSlide, 3000);  // Change slide every 3 seconds
+
+        // Touch/Drag event listeners for slide control
+        slides.addEventListener('mousedown', (e) => {
+            startX = e.clientX;
+            isDragging = true;
+        });
+
+        slides.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            const moveX = e.clientX - startX;
+            if (moveX > 50) {
+                showPreviousSlide();
+                isDragging = false;
+            } else if (moveX < -50) {
+                showNextSlide();
+                isDragging = false;
+            }
+        });
+
+        slides.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+
+        slides.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        slides.addEventListener('touchmove', (e) => {
+            const moveX = e.touches[0].clientX - startX;
+            if (moveX > 50) {
+                showPreviousSlide();
+            } else if (moveX < -50) {
+                showNextSlide();
+            }
+        });
+
+        slides.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+
+        // Close notice function
+        function closeNotice(id) {
+            const notice = document.getElementById(id);
+            notice.style.opacity = '0';
+            notice.style.transform = 'translateY(-20px)';
+            setTimeout(() => notice.style.display = 'none', 500);
+        }
+    </script>
+
+</body>
+</html>
+        
+       
